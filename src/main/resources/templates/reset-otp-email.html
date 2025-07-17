@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reset Your Password</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f6f8; padding: 20px;">
+<div style="max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 8px;">
+  <h2 style="color: #D9534F;">🔒 Password Reset Request</h2>
+  <p>Hello,</p>
+  <p>We received a request to reset your password. Please use the OTP below:</p>
+  <div style="border:2px solid #2b2929 ; text-align: center; font-size: 24px; font-weight: bold; margin: 20px 0; color: #333;">
+    <span th:text="${otp}">123456</span>
+  </div>
+  <p>This OTP is valid for <strong>15 minutes</strong>.</p>
+  <p>If you did not request this reset, you can safely ignore this email.</p>
+  <p style="margin-top: 30px;">Best regards,<br><strong>The Authify Team</strong></p>
+</div>
+</body>
+</html>
